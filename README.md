@@ -1,6 +1,6 @@
-<p align="center"><a href="https://zaindev.me"><img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=180&section=header&text=ZAIN%20ALI&fontColor=00D1FF&fontAlignY=35&animation=twinkling" width="100%" alt="Zain Ali pixel art header, creative developer and WebGL artist" /></a></p>
+<p align="center"><a href="https://zaindev.me"><img src="assets/header.gif" width="100%" alt="Animated neon Zain Ali header, creative developer and WebGL artist" /></a></p>
 
-<p align="center"><a href="https://zaindev.me"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=00D1FF&center=true&vCenter=true&width=700&lines=Building+Immersive+3D+Web+Experiences;Architecting+Scalable+Frontend+Systems;Turning+Ideas+Into+Interactive+Art" alt="Zain Ali creative developer tagline" /></a></p>
+<p align="center"><a href="https://zaindev.me"><img src="assets/typing.gif" alt="Animated Zain Ali creative developer tagline" /></a></p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=usernamezain&style=for-the-badge&color=7000FF" alt="Profile views" />
@@ -54,4 +54,16 @@ Explore [immersive 3D web experiences by Zain Ali](https://zaindev.me) and selec
 ## Let's Build Something
 
 <p align="center"><a href="https://zaindev.me/?utm_source=github&utm_medium=profile_readme&utm_campaign=readme"><img src="https://img.shields.io/badge/Portfolio-View%20my%20work-00D1FF?style=for-the-badge" alt="View my work at zaindev.me" /></a> <a href="https://zaindev.me/?utm_source=github&utm_medium=profile_readme&utm_campaign=readme"><img src="https://img.shields.io/badge/Hire%20Me-Start%20a%20project-FF005C?style=for-the-badge" alt="Creative developer available for hire" /></a></p>
-<p align="center"><a href="https://zaindev.me"><img src="https://capsule-render.vercel.app/api?type=waving&color=FF005C,7000FF,00D1FF&height=100&section=footer" width="100%" alt="Waving neon footer linking to Zain Ali's website" /></a></p>
+<p align="center"><a href="https://zaindev.me"><img src="assets/footer.gif" width="100%" alt="Animated neon footer linking to Zain Ali's website" /></a></p>
+
+## Local animation system
+
+The header, typing banner, and footer are deterministic Pillow GIFs generated locally. No remote image service is needed for these animations.
+
+```bash
+python -m pip install -r requirements.txt
+python generate.py
+python validate.py
+```
+
+`generate.py` is reproducible and `validate.py` checks dimensions, frame counts, file-size budgets, and README references. GitHub Actions regenerates and validates the assets when their source changes.
